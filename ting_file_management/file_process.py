@@ -32,3 +32,4 @@ def file_metadata(instance, position):
         return sys.stderr.write(str(result))
     except IndexError:
         sys.stderr.write('Posição inválida')
+
