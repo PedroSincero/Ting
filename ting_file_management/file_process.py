@@ -2,7 +2,6 @@
 from .file_management import txt_importer
 import sys
 
-
 def process(path_file, instance):
 
     if path_file not in instance.data:
