@@ -1,6 +1,6 @@
 class Queue:
     def __init__(self):
-       self.data = list()
+        self.data = list()
 
     def __len__(self):
         return len(self.data)
@@ -15,4 +15,3 @@ class Queue:
         if not self.data or index < 0:
             raise IndexError
         return self.data[index]
-
