@@ -36,5 +36,6 @@ def file_metadata(instance, position):
     else:
         sys.stdout.write(str(path_file))
 
+
 # Agradecimentos a Alessandra Rezende - Turma 10 - Tribo B
 # Pelo Auxilio na Refatoração do Codigo ^^
