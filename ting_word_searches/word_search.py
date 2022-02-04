@@ -15,4 +15,17 @@ def exists_word(word, instance):
 
 
 def search_by_word(word, instance):
-    """Aqui irá sua implementação"""
+    result = []
+    for data in instance.data:
+        currences = []
+        for lines in data['linhas_do_arquivo']:
+            if not lines.lower().count(word):
+                return result
+            currences.append(
+                {'linha': lines.lower().count(word), 'conteudo': lines})
+        result.append({
+            "palavra": word,
+            "arquivo": data['nome_do_arquivo'],
+            "ocorrencias": currences,
+        })
+    return result
